@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"led闪烁\startup_stm32f103xb.o"
+"led闪烁\main.o"
+"led闪烁\stm32f1xx_it.o"
+"led闪烁\stm32f1xx_hal_msp.o"
+"led闪烁\stm32f1xx_hal_gpio_ex.o"
+"led闪烁\stm32f1xx_hal.o"
+"led闪烁\stm32f1xx_hal_rcc.o"
+"led闪烁\stm32f1xx_hal_rcc_ex.o"
+"led闪烁\stm32f1xx_hal_gpio.o"
+"led闪烁\stm32f1xx_hal_dma.o"
+"led闪烁\stm32f1xx_hal_cortex.o"
+"led闪烁\stm32f1xx_hal_pwr.o"
+"led闪烁\stm32f1xx_hal_flash.o"
+"led闪烁\stm32f1xx_hal_flash_ex.o"
+"led闪烁\stm32f1xx_hal_exti.o"
+"led闪烁\system_stm32f1xx.o"
+--strict --scatter "led闪烁\led闪烁.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led闪烁.map" -o led闪烁\led闪烁.axf
