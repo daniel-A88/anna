@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"串口dma\startup_stm32f103xb.o"
+"串口dma\main.o"
+"串口dma\stm32f1xx_it.o"
+"串口dma\stm32f1xx_hal_msp.o"
+"串口dma\stm32f1xx_hal_gpio_ex.o"
+"串口dma\stm32f1xx_hal_uart.o"
+"串口dma\stm32f1xx_hal.o"
+"串口dma\stm32f1xx_hal_rcc.o"
+"串口dma\stm32f1xx_hal_rcc_ex.o"
+"串口dma\stm32f1xx_hal_gpio.o"
+"串口dma\stm32f1xx_hal_dma.o"
+"串口dma\stm32f1xx_hal_cortex.o"
+"串口dma\stm32f1xx_hal_pwr.o"
+"串口dma\stm32f1xx_hal_flash.o"
+"串口dma\stm32f1xx_hal_flash_ex.o"
+"串口dma\stm32f1xx_hal_exti.o"
+"串口dma\system_stm32f1xx.o"
+--strict --scatter "串口DMA\串口DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "串口DMA.map" -o 串口DMA\串口DMA.axf
